@@ -32,7 +32,7 @@ if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPod touc
 
 
 document.write('<script src="Framework/javascript/function.js"></script>');
-document.write('<script src="Framework/javascript/map.js"></script>');
+//document.write('<script src="Framework/javascript/map.js"></script>');
 document.write('<script src="settings/bind.js" charset="utf-8"></script>');
 
 // PHOTOSWIPE

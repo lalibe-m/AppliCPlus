@@ -2,17 +2,17 @@
 function bddinit() {
 	var langue_prete=new Array("fr","en","nl");
 	if(langue_prete.inArray(langencours) && langencours!='fr') {
-		var url_contenu="http://newtech.blueapps.com/photos/contenu_5_0_"+langencours+".html";
-		var url_bind="http://newtech.blueapps.com/photos/bind_5_0_"+langencours+".html";
-		url_map="http://newtech.blueapps.com/photos/map_5_0_"+langencours+".json";
+		var url_contenu="http://photo/contenu_5_0_"+langencours+".html";
+		//var url_bind="http://photos/bind_5_0_"+langencours+".html";
+		//url_map="http://photos/map_5_0_"+langencours+".json";
 		if(retournePage()=="index") {
 			window.location.href='index_'+langencours+'.html'; 
 			return;
 		}
 	} else {
-		var url_contenu="http://newtech.blueapps.com/photos/contenu_5_0.html";
-		var url_bind="http://newtech.blueapps.com/photos/bind_5_0.html";
-		url_map="http://newtech.blueapps.com/photos/map_5_0.json";
+		var url_contenu="http://photos/contenu_5_0.html";
+		//var url_bind="http://photos/bind_5_0.html";
+		//url_map="http://photos/map_5_0.json";
 	}
     
     // home_rss
