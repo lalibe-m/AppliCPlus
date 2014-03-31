@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Bienvenue sur CPlus</title>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
-        <meta charset="utf-8">
-		<link rel="stylesheet" href="../includes/login.css" content="text/css" />
+    <title></title>
+    <meta charset="ISO-8859-1">
         
-        <script type="text/javascript" charset="utf-8" src="Framework/javascript/main.js?fr"></script>
-        <script>
-		if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPod/i))||(navigator.userAgent.match(/iPad/i))){
+    <script type="text/javascript" charset="utf-8" src="Framework/javascript/main.js?fr"></script>
+    <script>
+	if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPod/i))||(navigator.userAgent.match(/iPad/i))){
 		var jQT = new $.jQTouch({
     	addGlossToIcon: false,
     	statusBar: 'black-translucent',
@@ -31,22 +28,24 @@
     <body onload="onBodyLoad()" id="index">
       <div id="jqt">
             <div id="home" class="current">
-            <div class="toolbar" style="display:block">
-			    <h1>Bienvenu sur CPlus</h1>
-                </div>
-    		<div id="home_cat2" onclick="location.href='#cat2'">
-                <a class="homeMenu" href="#cat2">
-                  <b>Test</b>
-                </a>
-            </div>
-            
-            <div id="cat2">
-            	<div class="toolbar">
-            		<h1>toto</h1>
-                		<a class="back" href="#" style="">Accueil</a>
-              	</div>
-                
-           	</div>
+            	<div id="home_wrapper">
+            		<div class="toolbar" style="display:block">
+			    		<h1>Bienvenu sur CPlus</h1>
+                	</div>
+    			<div id="home_cat2" onclick="location.href='#cat2'">
+                	<a class="homeMenu" href="#cat2">
+                  		<b>Test</b>
+                	</a>
+            	</div>     
+       		</div>
+       </div>
+       
+       <div id="cat2">
+         	<div class="toolbar">
+           		<h1>toto</h1>
+               	<a class="back" href="#" style="">Accueil</a>
+           	</div>  
+        </div>
     </body>
 </html>
 
