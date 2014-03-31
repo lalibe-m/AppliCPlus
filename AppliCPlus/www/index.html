@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title></title>
-    <meta charset="ISO-8859-1">
-        
-    <script type="text/javascript" charset="utf-8" src="Framework/javascript/main.js?fr"></script>
-    <script>
-	if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPod/i))||(navigator.userAgent.match(/iPad/i))){
+    <title>Bienvenue sur CPlus</title>
+
+        <meta charset="ISO-8859-1">
+        <script type="text/javascript" charset="utf-8" src="Framework/javascript/main.js?fr"></script>
+        <script>
+		if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPod/i))||(navigator.userAgent.match(/iPad/i))){
 		var jQT = new $.jQTouch({
     	addGlossToIcon: false,
     	statusBar: 'black-translucent',
@@ -23,226 +23,31 @@
     	preloadImages: []
         });
     }
-  	 </script>
+        </script>
     </head>
-    	<body onload="onBodyLoad()" id="index">
-      <div id="jqt">
+    <body onload="onBodyLoad()" id="index">
+      	<div id="jqt">
             <div id="home" class="current">
-                <div class="toolbar" style="display:block">
-                    <h3>NewTech</h3>
+            	<div class="toolbar" style="display:block">
+			    	<h1>CPlus</h1>
                 </div>
-                <div id="home_rss"></div>
                 <div id="home_wrapper">
-                <div id="home_cat2" onclick="location.href='#cat2'">
-                    <a class="homeMenu" href="#cat2">
-                        <b>Test</b>
-                    </a>
+    				<div id="home_cat2" onclick="location.href='#cat2'">
+                		<a class="homeMenu" href="#cat2">
+                  			<b>Procedures</b>
+                		</a>
+            		</div>
                 </div>
-		        <div id="home_cat21" onclick="location.href='#cat21'">
-                    <a class="homeMenu" href="#cat21">
-                        <b>Shoot</b>
-                    </a>
+            </div>
+            
+           	<div id="cat2">
+            	<div class="toolbar">
+            		<p>toto</p>
                 </div>
-		        <div id="home_cat29" onclick="location.href='#cat29'">
-                    <a class="homeMenu" href="#cat29">
-                        <b>Contacter</b>
-                    </a>
-                </div>
-            	<div id="home_cat2" onclick="location.href='#catfavoris'">
-                    <a class="homeMenu" href="#catfavoris">
-                        <b>Favoris</b>
-                    </a>
-                </div>
-            	<div id="home_cat4" onclick="location.href='#cat2'">
-                    <a class="homeMenu" href="#cat2">
-                        <b>Test</b>
-                    </a>
-                </div>
-            	<div id="home_cat5" onclick="meteo()">
-                    <a class="homeMenu" href="meteo()">
-                        <b>Meteo</b>
-                    </a>
-                </div>
-                </div>
+           	</div>
         </div>
-          <div id="catMeteo">
-              <div class="toolbar">
-                  <h1>Meteo</h1>
-                  <a class="back" href="#" style="">Accueil</a>
-              </div>
-              
-              <div id="content">
-   
-              </div>
-          </div>
-
-        
-         
-          
-          <!-- Module Shoot & Send -->
-          <div id="cat39">
-              <div class="toolbar">
-                  <h1>Alert direct</h1>
-                  <a class="back" href="#" style="">Accueil</a>
-              </div>
-              <div id="content">
-                <form>
-                  <ul class="rounded Input">
-                    <li>Shoot n'send direct </li>
-                    <li>Email destinataire</li>
-                    <li><input type="text" name="TextArea" id="sns_email0" /></li>
-                    <li>Commentaires</li>
-                    <li><input type="text" name="TextArea" id="sns_commentaires0" /></li>
-                    <li><a href="javascript:capturePhoto(config[0]);" class="redButton">Photo</a></li>
-                  </ul>
-                </form>
-              </div> 	
-          </div>
-          <!-- fin du module Shoot & send -->
-          <!-- Module Shoot & Send -->
-          <div id="cat40">
-              <div class="toolbar">
-                  <h1>Alert mailbox</h1>
-                  <a class="back" href="#" style="">Accueil</a>
-              </div>
-              <div id="content">
-                <form>
-                  <ul class="rounded" id="sns">
-                    <li>Shoot n'send utilisant la boite mail </li>
-                    <li><a href="javascript:capturePhoto(config[1]);" class="redButton">Photo</a></li>
-                  </ul>
-                </form>
-              </div> 	
-          </div>
-          <!-- fin du module Shoot & send -->
-          <!-- Module Shoot & Send -->
-          <div id="cat41">
-              <div class="toolbar">
-                  <h1>Postcard direct</h1>
-                  <a class="back" href="#" style="">Accueil</a>
-              </div>
-              <div id="content">
-                <form>
-                  <ul class="rounded Input">
-                    <li>Shoot n'send Postcard direct </li>
-                    <li>Email destinataire</li>
-                    <li><input type="text" name="TextArea" id="sns_email2" /></li>
-                    <li>Commentaires</li>
-                    <li><input type="text" name="TextArea" id="sns_commentaires2" /></li>
-                    <li><a href="javascript:capturePhoto(config[2]);" class="redButton">Photo</a></li>
-                  </ul>
-                </form>
-              </div> 	
-          </div>
-          <!-- fin du module Shoot & send -->
-          <!-- Module Shoot & Send -->
-          <div id="cat42">
-              <div class="toolbar">
-                  <h1>Postcard mailbox</h1>
-                  <a class="back" href="#" style="">Accueil</a>
-              </div>
-              <div id="content">
-                <form>
-                  <ul class="rounded" id="sns">
-                    <li>Shoot n'send Postcard utilisant la boite mail </li>
-                    <li><a href="javascript:capturePhoto(config[3]);" class="redButton">Photo</a></li>
-                  </ul>
-                </form>
-              </div> 	
-          </div>
-          <!-- fin du module Shoot & send -->
-          
-          <!-- module de Contact -->
-          <div id="cat29">
-              <div class="toolbar">
-                  <h1>Nous contacter</h1>
-                  <a class="back" href="#" style="">Accueil</a>
-              </div>
-              <div id="content" class="scroll">
-                  <script type="text/javascript">
-                      </script>
-                  
-                      <script type="text/javascript">
-                          
-                          function contactUs() {
-                          	  if (navigator.onLine) {
-								  if($('input:text[name=nom]').val() == "") {
-									  alert('Veuillez remplir votre nom');
-								  } else if($('input:text[name=prenom]').val() == "") {
-									  alert('Veuillez remplir votre prenom');
-								  } else if($('input:text[name=adresse_cp]').val() == "" || $('input:text[name=adresse_ville]').val() == "") {
-									  alert('Veuillez remplir votre adresse');
-								  } else if($('#email').val() == "") {
-									  alert('Veuillez remplir votre email');
-								  } else if($('input:text[name=message]').val() == "") {
-									  alert('Vous n\'avez pas inscrit de message');
-								  } else {
-									  $.blockUI({ message: '<h1>Veuillez patienter</h1><img src="Framework/images/loader.gif"/>'});
-									  $.ajax({
-											 type: "POST",
-											 url: "http://newtech.blueapps.com/contact/receiveform.php",
-											 data: {civilite: $('input:radio[name=civilite]').val(),
-											 nom: $('input:text[name=nom]').val(),
-											 prenom: $('input:text[name=prenom]').val(),
-											 adresse_numero: $('input:text[name=adresse_numero]').val(),
-											 adresse_voie: $('input:text[name=adresse_voie]').val(),
-											 adresse_complement: $('input:text[name=adresse_complement]').val(),
-											 adresse_cp: $('input:text[name=adresse_cp]').val(),
-											 adresse_ville: $('input:text[name=adresse_ville]').val(),
-											 telephone: $('#tel').val(),
-											 email: $('#email').val(),
-											 message: $('textarea[name=message]').val()
-											 }
-											 }).done(function( msg ) {
-													 $.blockUI({ message: '<h1>Votre demande a bien été envoyé !</h1>'});
-													 setTimeout($.unblockUI, 2000);
-													 });
-								  }
-						 	  } else {
-								alert("Fonctionnalité non disponible en mode hors connexion"); 
-							  }
-                          }
-                        
-                          </script>
-                      <form id="contact_form">
-                      <ul class="rounded Input">
-                          <li>Un suppl&eacute;ment d'information, une demande de document, une suggestion pour l'application...<br/>Les services de la ville sont &agrave; votre &eacute;coute et vous r&eacute;pondront dans les meilleurs d&eacute;lais.</li>
-                          <li style="background-color:#6d83a1;color:#f2f2f2;">Civilit&eacute;</li>
-                          <li><input type="radio" name="civilite" value="Mr." checked="checked" /> Mr.</li>
-                          <li><input type="radio" name="civilite" value="Mme." /> Mme.</li>
-                          <li><input type="text" placeholder="Nom*" name="nom" /></li>
-                          <li><input type="text" placeholder="Pr&eacute;nom*" name="prenom" /></li>
-                          <li style="background-color:#6d83a1;color:#f2f2f2;"><strong>Adresse</strong></li>
-                          <li><input type="text" placeholder="Adresse*" name="adresse_complement" /></li>
-                          <li><input type="text" placeholder="Code postal*" name="adresse_cp" /></li>
-                          <li><input type="text" placeholder="Ville*" name="adresse_ville" /></li>
-                          <li style="background-color:#6d83a1;color:#f2f2f2;">Coordonn&eacute;es</li>
-                          <li><input type="tel" placeholder="T&eacute;l&eacute;phone" name="telephone" id="tel" /></li>
-                          <li><input type="email" placeholder="Email*" name="email" id="email" /></li>
-                          <li style="background-color:#6d83a1;color:#f2f2f2;">Message</li>
-                          <li><textarea rows="3" name="message"></textarea></li>
-                          <li><a href="javascript:contactUs();" class="whiteButton">Envoyer</a></li>
-                          <li>Conform&eacute;ment &agrave; la loi du 6 janvier 1978 relative &agrave; l'informatique et aux libert&eacute;s, vous avez droit d'exercer un pouvoir d'acc&egrave;s et de rectification des donn&eacute;es vous concernant. Pour exercer ce droit, vous pouvez &eacute;crire au responsable de l'application.</li>
-                  	</ul>
-                  	</form>
-              </div>
-          </div>
-           <!-- fin du module de Contact -->
-          
-        <div id="detailpoi">
-            <div class="toolbar">
-                <h1></h1>
-                <a class="back" href="#">Retour</a>
-            </div>
-            <div id="mapliste" class="scroll ">
-                <div id="content" class="scroll">
-                    <div id="contentdetail" class="scroll withnavbar"></div>
-                </div>
-            </div>
-        </div>    
-  </div>
-		<div id="fakeToolbar" class="toolbar">
+        <div id="fakeToolbar" class="toolbar">
 		</div>
-  </body>
+    </body>
 </html>
 

@@ -33,6 +33,74 @@ body a {
     font-weight: normal;
 }
 
+#home_wrapper {
+    margin-top: 10px;
+}
+
+.box {
+	background-color: white;
+	border-width: 0px;
+	border-color: #999;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 0em 0;
+	padding: 5px 5px;
+    opacity: 0.8;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}
+
+.hangingSubhead {
+	font-size: 110%;
+	padding-left: 10px;
+	text-indent: -10px;
+	font-weight: bold;
+	color: black;
+}
+
+.titre {
+	color: #70AA00;
+	font-family: 'Arial';
+	font-size: 2em;
+	margin: 10px 0 15px 0;
+	text-align: left;
+}
+
+.soustitre {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	background: none;
+	display: block;
+	font-family: 'Arial';
+	font-size: 1.58em;
+    font-weight: bold;
+	margin: 25px 0 5px 0;
+	padding: 0;
+    text-shadow:1px 1px 1px white;
+    color: #4B3A38;
+    text-align:center;
+}
+
+.soustitre p {
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #888;  
+    color: white;
+}
+
+.evident {
+	font-weight: bold;	
+	color: #86A608;
+}
+
+.list #content .box li {
+	height: 20px;	
+	border-bottom: none;
+}
+
 a.homeMenu {
     font-family: 'Helvetica Neue', Helvetica;
     color: white;
