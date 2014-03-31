@@ -1,9 +1,30 @@
 /* CSS Document */
-h1 {
-	text-align:center;
-	color:#39C;	
+
+#jqt > * {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 44px;
+	background-color: #e9eef7;
 }
 
-#cadreLogin {
+#home, #contentMenu {
+	color: white;
+	width: 100%;
+    margin: auto;
+    background-position: center 0px;
+	padding: 0;
+    text-align:center;
+}
 
+#home_cat2, #home_cat3, #home_cat4, #home_cat5, #home_cat21, #home_cat29 {
+    display: inline-block;
+    margin:0 auto; /* si il s'agit du premier module de la page d'accueil on peut appliquer en plus un margin-top:Ypx pour dŽcaler en hauteur le bloc d'icones */ 
+    background-image:url(../images/decouvrir.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 70px;
+	text-align:center;
+	width: 90px;
+    height: 40px;
+	vertical-align: top;
 }
