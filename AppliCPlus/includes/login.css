@@ -42,3 +42,35 @@ a.homeMenu {
     height: 102px;
     width: 70px;
 }
+
+#dialog {
+    min-height: 0px:
+    overflow: hidden;
+}
+
+#dialog ul.metal {
+    list-style-type: none;
+}
+
+#dialog a {
+    text-decoration: none;
+}
+
+.ui-dialog .ui-dialog-content {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.ui-widget-content {
+    background: white;
+}
+
+.ui-widget-header {
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)), -webkit-linear-gradient(top, #92a3b9, #7f93ad 50%, #768ba7 51%, #6d83a1);
+    border: 1px solid #768ba7;
+    color: white;
+}
+
+#dialog .menuTitle {
+    line-height: 30px;
+}
