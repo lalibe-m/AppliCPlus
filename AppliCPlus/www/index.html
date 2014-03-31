@@ -7,12 +7,25 @@
         <meta charset="utf-8">
 		<link rel="stylesheet" href="../includes/login.css" content="text/css" />
         
-
-        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-        <script type="text/javascript">
-
-
-
+        <script type="text/javascript" charset="utf-8" src="Framework/javascript/main.js?fr"></script>
+        <script>
+		if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPod/i))||(navigator.userAgent.match(/iPad/i))){
+		var jQT = new $.jQTouch({
+    	addGlossToIcon: false,
+    	statusBar: 'black-translucent',
+    	themeSelectionSelector: '#jqt #themes ul',
+    	useFastTouch: true,
+    	preloadImages: []
+    });
+    } else {
+    	var jQT = new $.jQTouch({
+    	addGlossToIcon: false,
+    	statusBar: 'black-translucent',
+    	themeSelectionSelector: '#jqt #themes ul',
+    	useFastTouch: false,
+    	preloadImages: []
+        });
+    }
         </script>
     </head>
     <body onload="onBodyLoad()" id="index">

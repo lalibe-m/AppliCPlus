@@ -16,7 +16,7 @@
     text-align:center;
 }
 
-#home_cat2, #home_cat3, #home_cat4, #home_cat5, #home_cat21, #home_cat29 {
+#home_cat2 {
     display: inline-block;
     margin:0 auto; /* si il s'agit du premier module de la page d'accueil on peut appliquer en plus un margin-top:Ypx pour dŽcaler en hauteur le bloc d'icones */ 
     background-image:url(../images/decouvrir.png);
@@ -27,4 +27,18 @@
 	width: 90px;
     height: 40px;
 	vertical-align: top;
+}
+
+body a {
+    font-weight: normal;
+}
+
+a.homeMenu {
+    font-family: 'Helvetica Neue', Helvetica;
+    color: white;
+    font-size: 12px;
+	font-weight: bold;
+    text-decoration: none;
+    height: 102px;
+    width: 70px;
 }

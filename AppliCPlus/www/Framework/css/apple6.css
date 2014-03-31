@@ -1,0 +1,36 @@
+#jqt .toolbar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+	zoom: 1;
+}
+
+#content,#contentrss {
+    position: absolute;
+	top: 44px;
+	left: 0px;
+	width: 100%;
+	overflow: auto;
+	margin:0;
+	padding:0;
+}
+
+#detailpoi #content, .simplecontent {
+	margin: 0;
+	padding-top: 5px;
+	padding-left: 4px;
+	padding-right: 0px;
+	width: 98%;
+}
+
+#home_wrapper {
+    margin-top: 50px;
+}
+
+#jqt .toolbar > h3 {
+    line-height: 25px;
+}

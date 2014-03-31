@@ -1,0 +1,129 @@
+        #detailpoi #content,.simplecontent {
+              height: auto;
+              padding-left: 3%;
+              padding-right: 3%;
+              padding-top: 15px;
+              padding-bottom: 15px;
+          }
+          
+          #content {
+            /*z-index: 99999;*/
+            -webkit-overflow-scrolling:touch;
+            overflow:auto;
+          }
+          
+    nav{
+        z-index: 10;
+        text-align:             center;
+        position:				fixed;
+        display:                block;
+        bottom:                 0px;
+        left:                   0;
+        width:                  100%;
+        background-color:       #000;
+        border-top:             .05em solid rgba(255,255,255,.33);
+        -webkit-box-shadow:     0 -0.05em 0 rgba(0,0,0,0.9);
+        background-image:       -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.15)), color-stop(0.5, rgba(255,255,255,.10)), color-stop(0.505, rgba(255,255,255,.0)), to(rgba(255,255,255,.0)));
+      }
+      
+      nav a{
+        width:                  70px;
+        height:                 50px;
+        font-size:              0.7;
+        position:               relative;
+        border-radius:          .25em;
+        -webkit-border-radius:  .25em;
+        display:                inline-block;
+        vertical-align:         middle;
+        border-radius: .25em;
+        -webkit-border-radius: .25em;
+        border-top-left-radius: 0.25em;
+        border-top-right-radius: 0.25em;
+        border-bottom-right-radius: 0.25em;
+        border-bottom-left-radius: 0.25em;
+  		text-shadow: #5c718e 0 -1px 0;
+		text-decoration: none;
+      }
+      
+      nav a::after,
+      nav a::before{
+        position:               absolute;
+        content:                " ";
+        top:                    -1em;
+        left:                   0;
+        right:                  0;
+        bottom:                 0;
+      }
+      
+      nav a.map::after, nav a.map::before {
+        background-image:     url("../images/icons/103-map.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      
+      nav a.liste::after, nav a.liste::before {
+        background-image:     url("../images/icons/96-book.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      
+      nav a.ar_activate::after, nav a.activate::before {
+        background-image:     url("../images/icons/12-eye.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+	  
+      nav a.position::after, nav a.position::before {
+        background-image:     url("../images/icons/74-location.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      
+      nav a.refresh::after, nav a.refresh::before {
+        background-image:     url("../images/icons/01-refresh.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      
+      nav a.calendrier::after, nav a.calendrier::before {
+        background-image:     url("../images/icons/83-calendar.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      
+      nav a > strong{
+        position:               relative;
+        color:                  #fff;
+        top:                 	25px;
+        width:                  100%;
+        text-align:             center;
+        line-height:            1.5em;
+        font-weight:            bold;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      /* Grey Icon */
+
+      nav a::before{
+        z-index:                1;
+      }
+      
+      /* Icon Shadow */
+      
+      nav a::after{
+        z-index:                0;
+      }
+      
+      /* active Settings */
+      
+      nav a.activer{
+        background-color:       rgba(255,255,255,.10);
+      }
+      
+      nav a.activer > strong{
+        color:                  #ffffff;
+      }
+      
+      .withnavbar {
+        padding-bottom: 50px;
+      }
