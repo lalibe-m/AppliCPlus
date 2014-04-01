@@ -1,125 +1,80 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
-    <head>
-    <title>Bienvenue sur CPlus</title>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
 
-        <meta charset="ISO-8859-1">
-        <script type="text/javascript" charset="utf-8" src="Framework/javascript/main.js?fr"></script>
-        <script>
-		if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPod/i))||(navigator.userAgent.match(/iPad/i))){
-		var jQT = new $.jQTouch({
-    	addGlossToIcon: false,
-    	statusBar: 'black-translucent',
-    	themeSelectionSelector: '#jqt #themes ul',
-    	useFastTouch: true,
-    	preloadImages: []
-    });
-    } else {
-    	var jQT = new $.jQTouch({
-    	addGlossToIcon: false,
-    	statusBar: 'black-translucent',
-    	themeSelectionSelector: '#jqt #themes ul',
-    	useFastTouch: false,
-    	preloadImages: []
-        });
-    }
-        </script>
-      </head>
-    <body onload="onBodyLoad()" id="index">
-          <div id="jqt">
-              <div id="home" class="current">
-                  <div class="toolbar" style="display:block">
-                      <h1>CPlus</h1>
-                  </div>
-                  <div id="home_wrapper">
-                      <div id="home_cat2" onclick="location.href='#cat2'">
-                          <a class="homeMenu" href="#cat2">
-                              <b>Procedures</b>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-            
-          
-              <!-- module de Contact -->
-          <div id="cat2">
-              <div class="toolbar">
-                  <h1>Nous contacter</h1>
-                  <a class="back" href="#" style="">Accueil</a>
-              </div>
-              <div id="content" class="scroll">
-                  <script type="text/javascript">
-                      </script>
-                  
-                      <script type="text/javascript">
-                          
-                          function contactUs() {
-                              if (navigator.onLine) {
-                                  if($('input:text[name=nom]').val() == "") {
-                                      alert('Veuillez remplir votre nom');
-                                  } else if($('input:text[name=prenom]').val() == "") {
-                                      alert('Veuillez remplir votre prenom');
-                                  } else if($('input:text[name=adresse_cp]').val() == "" || $('input:text[name=adresse_ville]').val() == "") {
-                                      alert('Veuillez remplir votre adresse');
-                                  } else if($('#email').val() == "") {
-                                      alert('Veuillez remplir votre email');
-                                  } else if($('input:text[name=message]').val() == "") {
-                                      alert('Vous n\'avez pas inscrit de message');
-                                  } else {
-                                      $.blockUI({ message: '<h1>Veuillez patienter</h1><img src="Framework/images/loader.gif"/>'});
-                                      $.ajax({
-                                             type: "POST",
-                                             url: "http://newtech.blueapps.com/contact/receiveform.php",
-                                             data: {civilite: $('input:radio[name=civilite]').val(),
-                                             nom: $('input:text[name=nom]').val(),
-                                             prenom: $('input:text[name=prenom]').val(),
-                                             adresse_numero: $('input:text[name=adresse_numero]').val(),
-                                             adresse_voie: $('input:text[name=adresse_voie]').val(),
-                                             adresse_complement: $('input:text[name=adresse_complement]').val(),
-                                             adresse_cp: $('input:text[name=adresse_cp]').val(),
-                                             adresse_ville: $('input:text[name=adresse_ville]').val(),
-                                             telephone: $('#tel').val(),
-                                             email: $('#email').val(),
-                                             message: $('textarea[name=message]').val()
-                                             }
-                                             }).done(function( msg ) {
-                                                     $.blockUI({ message: '<h1>Votre demande a bien été envoyé !</h1>'});
-                                                     setTimeout($.unblockUI, 2000);
-                                                     });
-                                  }
-                              } else {
-                                alert("Fonctionnalité non disponible en mode hors connexion"); 
-                              }
-                          }
-                        
-                          </script>
-                      <form id="contact_form">
-                      <ul class="rounded Input">
-                          <li>Un suppl&eacute;ment d'information, une demande de document, une suggestion pour l'application...<br/>Les services de la ville sont &agrave; votre &eacute;coute et vous r&eacute;pondront dans les meilleurs d&eacute;lais.</li>
-                          <li style="background-color:#6d83a1;color:#f2f2f2;">Civilit&eacute;</li>
-                          <li><input type="radio" name="civilite" value="Mr." checked="checked" /> Mr.</li>
-                          <li><input type="radio" name="civilite" value="Mme." /> Mme.</li>
-                          <li><input type="text" placeholder="Nom*" name="nom" /></li>
-                          <li><input type="text" placeholder="Pr&eacute;nom*" name="prenom" /></li>
-                          <li style="background-color:#6d83a1;color:#f2f2f2;"><strong>Adresse</strong></li>
-                          <li><input type="text" placeholder="Adresse*" name="adresse_complement" /></li>
-                          <li><input type="text" placeholder="Code postal*" name="adresse_cp" /></li>
-                          <li><input type="text" placeholder="Ville*" name="adresse_ville" /></li>
-                          <li style="background-color:#6d83a1;color:#f2f2f2;">Coordonn&eacute;es</li>
-                          <li><input type="tel" placeholder="T&eacute;l&eacute;phone" name="telephone" id="tel" /></li>
-                          <li><input type="email" placeholder="Email*" name="email" id="email" /></li>
-                          <li style="background-color:#6d83a1;color:#f2f2f2;">Message</li>
-                          <li><textarea rows="3" name="message"></textarea></li>
-                          <li><a href="javascript:contactUs();" class="whiteButton">Envoyer</a></li>
-                          <li>Conform&eacute;ment &agrave; la loi du 6 janvier 1978 relative &agrave; l'informatique et aux libert&eacute;s, vous avez droit d'exercer un pouvoir d'acc&egrave;s et de rectification des donn&eacute;es vous concernant. Pour exercer ce droit, vous pouvez &eacute;crire au responsable de l'application.</li>
-                    </ul>
-                    </form>
-              </div>
-          </div>
-           <!-- fin du module de Contact -->
-          </div>
-          <div id="fakeToolbar" class="toolbar">
-          </div>
-    </body>
-  </html>
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Page One</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Page Two</a></li>
+            <li><a href="#page3">Page Three</a></li>
+			<li><a href="#page4">Page Four</a></li>
+		</ul>		
+	</div>
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
 
+<div data-role="page" id="page2">
+	<div data-role="header">
+    	<a href="#page" data-icon="home" data-iconpos="left" data-role="button">Home</a>
+        <h1>Page Two</h1>
+	</div>
+	<div data-role="fieldcontain">
+	  <label for="slider">Value:</label>
+	  <input type="range" name="slider" id="slider" value="0" min="0" max="100" />
+  </div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+    <a href="#page" data-icon="home" data-iconpos="left" data-role="button">Home</a>
+        <h1>Page Three</h1>   
+	</div>
+    <div data-role="fieldcontain">
+		  <fieldset data-role="controlgroup">
+		    <legend>checkbox</legend>
+		    <input type="checkbox" name="checkbox1" id="checkbox1_0" class="custom" value="" />
+		    <label for="checkbox1_0">Option 1</label>
+		    <input type="checkbox" name="checkbox1" id="checkbox1_1" class="custom" value="" />
+		    <label for="checkbox1_1">Option 2</label>
+	      </fieldset>
+	  </div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+    <a href="#page" data-icon="home" data-iconpos="left" data-role="button">Home</a>
+        <h1>Page Four</h1>
+	</div>
+    <div data-role="fieldcontain">
+		  <label for="flipswitch">Option:</label>
+		  <select name="flipswitch" id="flipswitch" data-role="slider">
+		    <option value="off">Off</option>
+		    <option value="on">On</option>
+	      </select>
+	  </div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+</body>
+</html>
