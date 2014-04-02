@@ -24,6 +24,6 @@ config[0] = {
 	en:"",
 	nl:""
     },
-    htmlMailField:"sns_email0",
+    htmlMailField:"",
     htmlCommentField:"sns_commentaires0"
 };
