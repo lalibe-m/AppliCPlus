@@ -6,7 +6,7 @@
     margin: auto;
     background-position: center 0px;
 	padding: 0;
-    text-align:center;
+	text-align:center;
 }
 
 #home_page1, #home_page2, #home_page3 {
@@ -16,7 +16,7 @@
     background-position: center top;
     padding-top: 70px;
 	text-align:center;
-	width: 90px;
+	width: 110px;
     height: 40px;
 	vertical-align: top;
 }
