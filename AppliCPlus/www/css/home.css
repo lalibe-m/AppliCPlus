@@ -14,9 +14,9 @@
     margin:0 auto; /* si il s'agit du premier module de la page d'accueil on peut appliquer en plus un margin-top:Ypx pour dŽcaler en hauteur le bloc d'icones */ 
     background-repeat: no-repeat;
     background-position: center top;
-    padding-top: 70px;
+    padding-top: 30px;
 	text-align:center;
-	width: 120px;
+	width: 130px;
     height: 40px;
 	vertical-align: top;
 }
