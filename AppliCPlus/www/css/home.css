@@ -1,5 +1,9 @@
 /* CSS Document */
 
+body {
+	background-color:#003b61;
+}
+
 #home {
 	color: white;
 	width: 100%;
@@ -17,11 +21,11 @@
     padding-top: 30px;
 	text-align:center;
 	width: 130px;
-    height: 40px;
+    height: 60px;
 	vertical-align: top;
 }
 
 #home_page7 {
-    margin-top:60%;
+    margin-top:62%;
 	margin-left:75%
 }
