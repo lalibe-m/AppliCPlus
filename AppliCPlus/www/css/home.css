@@ -18,7 +18,7 @@ body {
     margin:0 auto; /* si il s'agit du premier module de la page d'accueil on peut appliquer en plus un margin-top:Ypx pour dŽcaler en hauteur le bloc d'icones */ 
     background-repeat: no-repeat;
     background-position: center top;
-    padding-top: 30px;
+    padding-top: 20px;
 	text-align:center;
 	width: 130px;
     height: 90px;
@@ -26,6 +26,6 @@ body {
 }
 
 #home_page7 {
-    margin-top:60%;
-	margin-left:76%
+    margin-top:500px;
+	margin-left:78%
 }
