@@ -9,29 +9,44 @@
 <script src="Framework/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 <script src="Framework/pluginsAndroid/sns-android.js" type="text/javascript"></script>
 <script src="settings/snsConfig.js" type="text/javascript"></script>
-</head> 
-<body> 
+<!--<script src="Framework/cordova.js" type="text/javascript" charset="utf-8"></script>
+-->
+</head>
+ 
+<body>
 
+<!-- Module Page D'acceuil --> 
 <div data-role="page" id="page">
     <div data-role="header">
-        <h1>Procedures</h1>
+        <h1>Procedures CPlus</h1>
     </div>
     <div id="home" data-role="content">	
-    	<div id="home_page1" onClick="location.href='#page1'">
-            <a id="homemenu" href="#page1"><b>Wifi</b></a>
+    	 <div id="home_page1" onClick="location.href='#page1'">
+            <a href="#page1"><img src="Framework/images/wifi.png" width="72" height="72"></a>
          </div>
          <div id="home_page2" onClick="location.href='#page2'">
-            <a id="homemenu" href="#page2"><b>Open VPN</b></a>
+            <a href="#page2"><img src="Framework/images/openvpn.png" width="72" height="72"></a>
          </div>
          <div id="home_page3" onClick="location.href='#page3'">
-            <a id="homemenu" href="#page3"><b>Serveurs</b></a>
+            <a href="#page3"><img src="Framework/images/tel.png" width="72" height="72"></a>
          </div>
          <div id="home_page4" onClick="location.href='#page4'">
-            <a id="homemenu" href="#page4"><b>Shoot'n'Send</b></a>
+            <a href="#page4"><img src="Framework/images/progiciel.png" width="72" height="72"></a>
+         </div>
+         <div id="home_page5" onClick="location.href='#page5'">
+            <a href="#page5"><img src="Framework/images/epy.png" width="72" height="72"></a>
+         </div>
+         <div id="home_page6" onClick="location.href='#page6'">
+            <a href="#page6"><img src="Framework/images/app_photo.png" width="72" height="72"></a>
+         </div>
+         <div id="home_page7" onClick="location.href='#page7'">
+            <a href="#page7"><img src="Framework/images/logo_cplus.png" width="30" height="30"></a>
          </div>
     </div>
 </div>
+<!-- fin du module  -->
 
+<!-- Module Wifi -->
 <div data-role="page" id="page1">
     <div data-role="header">
         <a href="#page" data-icon="home" data-iconpos="left" data-role="button">Home</a>
@@ -46,43 +61,83 @@
         <li><a href="#page16">XP VLAN DATA</a></li>
 	</ul>
 </div>
+<!-- fin du module Wifi -->
 
+<!-- Module OpenVPN -->
 <div data-role="page" id="page2">
     <div data-role="header">
     <a href="#page" data-icon="home" data-iconpos="left" data-role="button">Home</a>
         <h1>Open VPN</h1>   
     </div>
     <ul data-role="listview">
-            <li><a href="#page21">VPN 1</a></li>
-            <li><a href="#page22">VPN 2</a></li>
+        <li><a href="#page21">VPN 1</a></li>
+        <li><a href="#page22">VPN 2</a></li>
    	    <li><a href="#page23">VPN 3</a></li>
 	</ul>
 </div>
+<!-- fin du module OpenVPN -->
 
+<!-- Module Telephones -->
 <div data-role="page" id="page3">
     <div data-role="header">
     <a href="#page" data-icon="home" data-iconpos="left" data-role="button">Home</a>
-        <h1>Serveurs</h1>
+        <h1>Telephones</h1>
     </div>
     <ul data-role="listview">
-            <li><a href="#page31">Baie SAN</a></li>
-            <li><a href="#page32">Serveurs Web</a></li>
+        <li><a href="#page31">tel 1</a></li>
+        <li><a href="#page32">tel 2</a></li>
 	</ul>
 </div>
+<!-- fin du module Telephones -->
+
+<!-- Module Progiciels -->
+<div data-role="page" id="page4">
+    <div data-role="header">
+    <a href="#page" data-icon="home" data-iconpos="left" data-role="button">Home</a>
+        <h1>Progiciels</h1>
+    </div>
+    <ul data-role="listview">
+        <li><a href="#page31">pro 1</a></li>
+        <li><a href="#page32">pro 2</a></li>
+	</ul>
+</div>
+<!-- fin du module Progiciels -->
+
+<!-- Module Etoiles plein les yeux -->
+<div data-role="page" id="page5">
+    <div data-role="header">
+    <a href="#page" data-icon="home" data-iconpos="left" data-role="button">Home</a>
+        <h1>Epy's</h1>
+    </div>
+    <ul data-role="listview">
+        <li><a href="#page31">epy 1</a></li>
+        <li><a href="#page32">epy 2</a></li>
+	</ul>
+</div>
+<!-- fin du module Etoiles plein les yeux -->
 
 <!-- Module Shoot & Send -->
-<div data-role="page" id="page4">
+<div data-role="page" id="page6">
   <div data-role="header">
     <a href="#page" data-icon="home" data-iconpos="left" data-role="button">Home</a>
         <h1>Alerte</h1>
-    </div>
+  </div>
       <ul data-role="listview">
         <li>Commentaires</li>
         <li><input type="text" name="TextArea" id="sns_commentaires0" /></li>
-        <li><a onclick="capturePhoto(config[0]);">Photo</a></li>
+        <li><a href="javascript:capturePhoto(config[0]);">Photo</a></li>
       </ul>
-  </div> 	
+</div> 	
 <!-- fin du module Shoot & send -->
+
+<!-- Module entreprise CPlus -->
+<div data-role="page" id="page7">
+    <div data-role="header">
+    <a href="#page" data-icon="home" data-iconpos="left" data-role="button">Home</a>
+        <h1>CPlus</h1>
+    </div>
+</div>
+<!-- fin du module entreprise CPlus -->
 
 </body>
 </html>

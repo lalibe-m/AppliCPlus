@@ -9,24 +9,19 @@
 	text-align:center;
 }
 
-#home_page1, #home_page2, #home_page3 {
+#home_page1, #home_page2, #home_page3, #home_page4, #home_page5, #home_page6 {
     display: inline-block;
     margin:0 auto; /* si il s'agit du premier module de la page d'accueil on peut appliquer en plus un margin-top:Ypx pour dŽcaler en hauteur le bloc d'icones */ 
     background-repeat: no-repeat;
     background-position: center top;
     padding-top: 70px;
 	text-align:center;
-	width: 110px;
+	width: 90px;
     height: 40px;
 	vertical-align: top;
 }
 
-a.homeMenu {
-    font-family: 'Helvetica Neue', Helvetica;
-    color: white;
-    font-size: 12px;
-	font-weight: bold;
-    text-decoration: none;
-    height: 102px;
-    width: 70px;
+#home_page7 {
+    margin-top:70%;
+	margin-left:70%
 }

@@ -50,7 +50,7 @@ function capturePhoto(config) {
 	{
 	    config.lang = "fr";
 	    __tmpConfig = config;
-	    if (navigator.userAgent.match(/android/i)) {
+	    if (device.plateform == "Android") {
 		ShootnSend.capture(onPhotoDataSuccess, onShootnSendFail, config);
 	    }
 	}
