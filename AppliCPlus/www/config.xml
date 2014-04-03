@@ -4,8 +4,9 @@
     id        = "com.phonegap.example"
     version   = "1.0.0">
 
-<name>PhoneGap Build Application</name>
-
+<name>CPlus</name>
+<Icône  src = "Framework/images/logo_cplus.png"  />
+<Écart: splash  src = "Framework/images/splash.png"  />
 <description>
 A simple PhoneGap Build application.
 </description>
