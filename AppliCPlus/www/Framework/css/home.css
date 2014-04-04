@@ -1,9 +1,5 @@
 /* CSS Document */
 
-body {
-	background-color:#003b61;
-}
-
 #home {
 	background-color: #003b61;
 	width: 100%;
@@ -28,8 +24,4 @@ body {
 #home_page7 {
     margin-top: 18px;
 	margin-left: 80%
-}
-
-#page1, #page2, #page3, #page4, #page5, #page6 {
-	background-color: #003b61;
 }

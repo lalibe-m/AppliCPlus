@@ -5,14 +5,13 @@
     version   = "1.0.0">
 
 <name>CPlus</name>
-<Icône  src = "logo_cplus.png"  />
-<Écart: splash  src = "splash.png"  />
+<icon src="logo_cplus.png" />
 <description>
 A simple PhoneGap Build application.
 </description>
 
-<author href="https://example.com" email="you@example.com">
-Your Name
+<author href="https://example.com" email="maxime.laliberte@epitech.eu">
+Laliberte Maxime
 </author>
 
 </widget>
