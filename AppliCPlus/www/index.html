@@ -12,7 +12,7 @@
 <script src="Framework/settings/snsConfig.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$(document).bind('mobileinit', function() {
-		$.mobile.metaViewportContent = 'width=device-width, minimum-scale=1, maximum-scale=2';	
+		$.mobile.metaViewportContent = 'width=device-width, minimum-scale=1, maximum-scale=2';
 	});
 </script>
 </head>
@@ -68,7 +68,7 @@
          </div>
     </div>
 </div>
-<!-- fin du module  -->
+<!-- fin du module page d'acceuil -->
 
 <!-- Module Wifi -->
 <div data-role="page" id="page1">
@@ -77,13 +77,20 @@
         <h1>Wifi</h1>
     </div>
     <ul data-role="listview">
-    	<li><a href="http://cplus.campus2point0.org/proceduresCPlus/wifiDouai.jpg">acces wifi Douai</a></li>
+    	<li><a href="#page10">acces wifi Douai</a></li>
      	<li><a href="http://cplus.campus2point0.org/proceduresCPlus/wifiNat.jpg">configuration Rue Nationale</a></li>
    	    <li><a href="http://cplus.campus2point0.org/proceduresCPlus/creaWifiGuest.jpg">creation compte GUEST</a></li>
         <li><a href="http://cplus.campus2point0.org/proceduresCPlus/creaWifiData.jpg">creation compte DATA</a></li>
    	    <li><a href="http://cplus.campus2point0.org/proceduresCPlus/wifiVLANGUEST.jpg">XP VLAN GUEST</a></li>
         <li><a href="http://cplus.campus2point0.org/proceduresCPlus/wifiVLANDATA.jpg">XP VLAN DATA</a></li>
 	</ul>
+</div>
+<div data-role="page" id="page10">
+    <div data-role="header">
+        <a href="#page1" data-icon="home" data-iconpos="left" data-role="button">Wifi</a>
+        <h1>Wifi Douai</h1>
+    </div>
+    <img src="http://cplus.campus2point0.org/proceduresCPlus/wifiDouai.jpg">
 </div>
 <!-- fin du module Wifi -->
 
