@@ -11,6 +11,12 @@
 <script src="Framework/settings/snsConfig.js" type="text/javascript"></script>
 <!--<script src="Framework/cordova.js" type="text/javascript" charset="utf-8"></script>
 -->
+<script>
+	function getLink(lien) {
+		window.plugins.childBrowser.showWebPage(lien);
+	}
+</script>
+
 </head>
  
 <body>
@@ -73,12 +79,12 @@
         <h1>Wifi</h1>
     </div>
     <ul data-role="listview">
-    	<li><a href="http://cplus.campus2point0.org/proceduresCPlus/wifiDouai.pdf">acces wifi Douai</a></li>
-     	<li><a href="http://cplus.campus2point0.org/proceduresCPlus//wifiNat.pdf">configuration Rue Nationale</a></li>
-   	    <li><a href="http://cplus.campus2point0.org/proceduresCPlus/creaWifiGuest.pdf">creation compte GUEST</a></li>
-        <li><a href="http://cplus.campus2point0.org/proceduresCPlus/creaWifiData.pdf">creation compte DATA</a></li>
-   	    <li><a href="http://cplus.campus2point0.org/proceduresCPlus/wifiVLANGUEST.pdf">XP VLAN GUEST</a></li>
-        <li><a href="http://cplus.campus2point0.org/proceduresCPlus/wifiVLANDATA.pdf">XP VLAN DATA</a></li>
+    	<li><a onClick="getLink('http://cplus.campus2point0.org/proceduresCPlus/wifiDouai.pdf')">acces wifi Douai</a></li>
+     	<li><a href="http://www.google.com">configuration Rue Nationale</a></li>
+   	    <li><a onClick="getLink('http://cplus.campus2point0.org/proceduresCPlus/creaWifiGuest.pdf')">creation compte GUEST</a></li>
+        <li><a onClick="getLink('http://cplus.campus2point0.org/proceduresCPlus/creaWifiData.pdf')">creation compte DATA</a></li>
+   	    <li><a onClick="getLink('http://cplus.campus2point0.org/proceduresCPlus/wifiVLANGUEST.pdf')">XP VLAN GUEST</a></li>
+        <li><a onClick="getLink('http://cplus.campus2point0.org/proceduresCPlus/wifiVLANDATA.pdf')">XP VLAN DATA</a></li>
 	</ul>
 </div>
 <!-- fin du module Wifi -->

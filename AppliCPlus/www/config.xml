@@ -6,6 +6,7 @@
 
 <name>CPlus</name>
 <icon src="logo_cplus.png" />
+<plugin name="ChildBrowserCommand" value="ChildBrowserCommand" />
 <description>
 A simple PhoneGap Build application.
 </description>
